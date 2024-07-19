@@ -64,5 +64,9 @@ require __DIR__.'/auth.php';
 
 // fin ajout Breeze 
 
+//enforce HTTPS
+URL::forceScheme('https');
+
+
 // Chope tout et renvoie un message WIP 
 Route::fallback(function () { return redirect(route('lressource'))->with('success', 'Nulle part ailleurs ...WIP'); })->name('catchall');
