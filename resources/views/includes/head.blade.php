@@ -10,10 +10,10 @@
 
         <!-- <script  src="https://cdn.tailwindcss.com"></script> -->
          <!-- tailwindcss file was added to public folder -->
-        <script src="{{asset ('tailwindcss.js') }}"></script>
+        <script src="{{secure_asset ('tailwindcss.js') }}"></script>
 
         <!-- Alpinejs file was added to public folder -->
-        <script defer src="{{asset ('alpinejs.js') }}"></script>
+        <script defer src="{{secure_asset ('alpinejs.js') }}"></script>
 
         <!-- Alpinejs file was added to public folder -->
         <style>
