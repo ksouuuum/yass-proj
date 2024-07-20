@@ -3,8 +3,8 @@
          <div class="container">
          
                <ul class="ml-2 flex flex-col gap-6 text-gray-500 w-[800px]">
-                     <h2 class="text-3xl font-bold" > Liste des utilisateurs dans la base   </h2>
-                     <div class="text-start mb-2"> <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add New User</a>  </div>
+                     <h2 class="text-3xl font-bold" > Liste des utilisateurs du site web   </h2>
+                     <div class="text-start mb-2"> <a href="#" disabled class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add New User</a>  </div>
                      @forelse($users as $index => $row)                     
                               <ul class="ml-2 pt-2 flex flex-row border-b-0 gap-6 justify-between  items-center" > 
                                  <li  > {{ $index + 1 }} </li>
