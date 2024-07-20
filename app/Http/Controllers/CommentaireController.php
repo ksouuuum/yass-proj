@@ -81,10 +81,10 @@ class CommentaireController extends Controller
     public function statecomm(Request $req)
     {
         $ct = Commentaire::findOrFail($req->id);
-        if ($req->isactif == true) {
-            $ct->isactif = false;
+        if ($req->isactif == '1') {
+            $ct->isactif = '0';
         } else {
-            $ct->isactif = true;
+            $ct->isactif = '1';
         }
         $ct->save();
         return back()->with('success', "Le commentaire a été mis à jour " );
