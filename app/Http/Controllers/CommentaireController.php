@@ -47,7 +47,7 @@ class CommentaireController extends Controller
      */
     public function show(Commentaire $commentaire)
     {
-        //
+       return 'wip'; //
     }
 
     /**

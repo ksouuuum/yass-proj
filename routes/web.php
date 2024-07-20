@@ -14,9 +14,7 @@ Route::get('/', function () {
     return redirect(route('lressource'));
 })->name('home');
 
-Route::get('toto', function () {
-    return 'wip';
-})->name('toto');
+Route::get('toto', [CommentaireController::class, 'show'] )->name('toto');
 
 // debut de gestion des utilisateurs - il n y a que la liste 
 Route::get('user', function () {
