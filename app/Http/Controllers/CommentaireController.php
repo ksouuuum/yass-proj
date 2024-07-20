@@ -51,6 +51,7 @@ class CommentaireController extends Controller
         //dd($commentaires);
 
         return view('pages.commentaire.list',  compact('commentaires'));  //
+
         //return 'wiiiiiiiiiip';
     }
 
