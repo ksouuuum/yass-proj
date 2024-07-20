@@ -1,7 +1,7 @@
 <!-- list of ressources  -->
 @extends('layouts.default')
 @section('content')
-{{dd($commentaires)}}
+<!-- {{dd($commentaires)}} -->
 <div id="" class="mt-8 ">
     <div class="flex flex-col gap-2 justify-center ">
         <h2 class="text-violet-500 text-xl md:text-2xl font-bold px-2"> Liste de tous les commentaires  </h2>
