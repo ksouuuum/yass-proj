@@ -12,7 +12,7 @@
         {{ $commentaires->links() }}
         
         <!-- cadre de tous  les contenus  -->
-        <div class="w-full min-h-screen flex flex-row gap-4 flex-wrap justify-center  items-start text-sm text-violet-500  "> 
+        <div class="w-full min-h-screen flex flex-row gap-4 flex-wrap justify-between  items-start text-sm text-violet-500  "> 
             @forelse($commentaires as $index => $row)
                 <!-- Le cadre d'une ressource  -->
                 <div class="w-80 mt-1 flex flex-col gap-1 ">
