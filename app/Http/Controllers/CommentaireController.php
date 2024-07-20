@@ -82,10 +82,10 @@ class CommentaireController extends Controller
     {
         $ct = Commentaire::findOrFail($req->id);
         //dd($req->isactif);
-        if ($ct->isactif != '0') {
-            $ct->isactif = '1';
+        if ($ct->isactif == true) {
+            $ct->isactif = false;
         } else {
-            $ct->isactif = '1';
+            $ct->isactif = true;
         }
         $ct->save();
         return back()->with('success', "Le commentaire a été mis à jour " );
