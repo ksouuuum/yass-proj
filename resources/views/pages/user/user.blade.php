@@ -4,15 +4,15 @@
          
                <ul class="ml-2 flex flex-col gap-6 text-gray-500 w-[800px]">
                      <h2 class="text-3xl font-bold" > Liste des utilisateurs du site web   </h2>
-                     <div class="text-start mb-2"> <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-75">Ajouter un utilisateur</a>  </div>
+                     <div class="text-start mb-2"> <a href="" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" disabled>Ajouter un utilisateur</a>  </div>
                      @forelse($users as $index => $row)                     
                               <ul class="ml-2 pt-2 flex flex-row border-b-0 gap-6 justify-between  items-center" > 
                                  <li  > {{ $index + 1 }} </li>
                                  <li  > {{ $row->name }} </li>
                                  <li > {{ $row->email }}</li>     
                                  <li > {{ $row->groupe->lib }}</li>                         
-                                 <li > <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded p-2 disabled:opacity-75">Editer</a></li>
-                                 <li > <a href="#" class="bg-red-200 hover:bg-red-300 text-white font-bold  rounded p-2">Desactiver le compte</a></li>
+                                 <li > <a href="" class="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded p-2" disabled>Editer</a></li>
+                                 <li > <a href="" class="bg-red-200 hover:bg-red-300 text-white font-bold  rounded p-2">Desactiver le compte</a></li>
 
                               </ul>
                      @empty <span> No Users Found</span>
