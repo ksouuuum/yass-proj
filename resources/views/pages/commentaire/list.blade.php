@@ -19,6 +19,7 @@
                             
                             <div class="flex flex-col gap-1  items-center mt-1 space-y-0 ">
                                 <h1 class="font-bold text-violet-500 text-md leading-tight">{{ $row->id}}</h1>
+                                <h2 class="font-bold text-violet-500 text-md leading-tight">{{ $row->user->name}}</h2>
                                 <p class=" mt-4 mb-4 text-slate-900 border-b border-t border-slate-300 ">   {{ Str::limit($row->corps, 50) }} </p>
                                 <p class=" mt-4 mb-4 text-slate-900 border-b border-t border-slate-300 ">   {{ $row->created_at}} </p>
                                 <p class=" mt-4 mb-4 text-slate-900 border-b border-t border-slate-300 ">   
