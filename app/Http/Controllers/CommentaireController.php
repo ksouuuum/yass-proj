@@ -45,7 +45,7 @@ class CommentaireController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Commentaire $commentaire)
+    public function show()
     {
         $commentaires = Commentaire::get()->paginate(9);
 
