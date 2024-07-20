@@ -22,7 +22,7 @@
                                 <a href="{{route('ressource', ['id'=>$row->ressource->id])}}"><h2 class="font-bold text-violet-500 text-md leading-tight">{{ $row->ressource->titre}}</h2></a>
                                 <p class=" mt-4 mb-4 text-slate-900 border-b border-t border-slate-300 ">   {{ Str::limit($row->corps, 50) }} </p>
                                 <p class=" mt-4 mb-4 text-slate-900 border-b border-t border-slate-300 ">   {{ $row->created_at}} </p>
-                                <form action="{{ route('statecomm') }}"  method="POST">
+                                <form action="{{ route('statecomm/') }}"  method="POST">
                                     @csrf
                                     <input type="hidden" name="id" value="{{$row->id}}">
                                     <button type="submit" class="bg-violet-500 text-white p-2 rounded-md">

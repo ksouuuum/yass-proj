@@ -16,7 +16,7 @@ Route::get('/', function () {
 
 Route::get('gestcom', [CommentaireController::class, 'show'] )->middleware('auth', 'NatUser:AdminApp')->name('gestcom');
 
-Route::post(('statecomm/{id}'), [CommentaireController::class, 'statecomm'])->middleware('auth', 'NatUser:AdminApp')->name('statecomm');
+Route::post(('statecomm'), [CommentaireController::class, 'statecomm'])->middleware('auth', 'NatUser:AdminApp')->name('statecomm');
 
 // debut de gestion des utilisateurs - il n y a que la liste 
 Route::get('user', function () {
