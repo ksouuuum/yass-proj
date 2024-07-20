@@ -47,7 +47,9 @@ class CommentaireController extends Controller
      */
     public function show()
     {
-        $commentaires = Commentaire::paginate(10);
+        $commentaires = Commentaire::latest();
+        $commentaires = $commentaires->paginate(10);
+
         //dd($commentaires);
 
         return view('pages.commentaire.list',  compact('commentaires'));  //
