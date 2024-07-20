@@ -46,7 +46,7 @@
             <!-- la zonne d affichage des commentaires -->
             <div class=" w-full space-y-2 overflow-y-auto max-h-screen ">
                 @forelse($myres->commentaires as $index => $row)
-                    @if ($row->isactif === true)
+                    @if ($row->isactif == true)
                         <div class="flex bg-slate-50 p-2 rounded-md">                       
                             <div class="ml-2 flex flex-col">
                                 <div class="flex flex-col">
