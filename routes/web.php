@@ -14,7 +14,7 @@ Route::get('/', function () {
     return redirect(route('lressource'));
 })->name('home');
 
-Route::get('toto', [CommentaireController::class, 'show'] )->name('toto');
+Route::get('toto', [CommentaireController::class, 'show'] )->middleware('auth', 'NatUser:AdminApp')->name('toto');
 
 // debut de gestion des utilisateurs - il n y a que la liste 
 Route::get('user', function () {
