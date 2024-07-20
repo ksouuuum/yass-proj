@@ -21,7 +21,7 @@
                                 <h1 class="font-bold text-violet-500 text-md leading-tight">{{ $row->id}}</h1>
                                 <p class=" mt-4 mb-4 text-slate-900 border-b border-t border-slate-300 ">   {{ Str::limit($row->corps, 50) }} </p>
                                 <p class=" mt-4 mb-4 text-slate-900 border-b border-t border-slate-300 ">   {{ $row->created_at}} </p>
-                                <p class=" mt-4 mb-4 text-slate-900 border-b border-t border-slate-300 ">   {{ $row->isactif }} </p>
+                                <p class=" mt-4 mb-4 text-slate-900 border-b border-t border-slate-300 ">   {{ if ($row->isactif == 0) "commentaire actif" else "commentaire inactif"}} </p>
                             </div>  
                 </div>
 
