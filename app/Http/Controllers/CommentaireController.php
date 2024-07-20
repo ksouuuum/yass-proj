@@ -81,8 +81,8 @@ class CommentaireController extends Controller
     public function statecomm(Request $req)
     {
         $ct = Commentaire::findOrFail($req->id);
-        if ($req->isactif == '1') {
-            $ct->isactif = '0';
+        if ($req->isactif != '0') {
+            $ct->isactif = '1';
         } else {
             $ct->isactif = '1';
         }
