@@ -49,7 +49,8 @@ class CommentaireController extends Controller
     {
         //$commentaires = Commentaire::get()->paginate(9);
 
-        return view('pages.commentaire.list',  compact('commentaires'));  //
+        //return view('pages.commentaire.list',  compact('commentaires'));  //
+        return 'wiiiiiiiiiip';
     }
 
     /**
