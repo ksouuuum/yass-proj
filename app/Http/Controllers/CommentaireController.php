@@ -48,10 +48,10 @@ class CommentaireController extends Controller
     public function show()
     {
         $commentaires = Commentaire::paginate(10);
-        dd($commentaires);
+        //dd($commentaires);
 
-        //return view('pages.commentaire.list',  compact('commentaires'));  //
-        return 'wiiiiiiiiiip';
+        return view('pages.commentaire.list',  compact('commentaires'));  //
+        //return 'wiiiiiiiiiip';
     }
 
     /**
