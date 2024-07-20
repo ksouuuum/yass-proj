@@ -23,7 +23,7 @@
                                 <p class=" mt-4 mb-4 text-slate-900 border-b border-t border-slate-300 ">   {{ $row->created_at}} </p>
                                 <p class=" mt-4 mb-4 text-slate-900 border-b border-t border-slate-300 ">   
                                     @if ($row->isactif === 0) commentaire actif 
-                                        @elseif commentaire inactif 
+                                        @else commentaire inactif 
                                     @endif 
                                 </p>
                             </div>  
