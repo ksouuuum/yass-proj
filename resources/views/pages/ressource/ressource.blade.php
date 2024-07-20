@@ -46,15 +46,17 @@
             <!-- la zonne d affichage des commentaires -->
             <div class=" w-full space-y-2 overflow-y-auto max-h-screen ">
                 @forelse($myres->commentaires as $index => $row)
-                    <div class="flex bg-slate-50 p-2 rounded-md">                       
-                        <div class="ml-2 flex flex-col">
-                            <div class="flex flex-col">
-                                <p class="text-slate-900 text-sm">{{ $row->user->name }}</p>
-                                <p class="mt-2 text-xs text-slate-400" >{{ $row->created_at }}</p>
+                    @if ($row->isactif === true)
+                        <div class="flex bg-slate-50 p-2 rounded-md">                       
+                            <div class="ml-2 flex flex-col">
+                                <div class="flex flex-col">
+                                    <p class="text-slate-900 text-sm">{{ $row->user->name }}</p>
+                                    <p class="mt-2 text-xs text-slate-400" >{{ $row->created_at }}</p>
+                                </div>
+                                <p class="mt-4 text-slate-800 text-xs "> {{ Str::limit($row->corps, 200) }} </p>
                             </div>
-                            <p class="mt-4 text-slate-800 text-xs "> {{ Str::limit($row->corps, 200) }} </p>
                         </div>
-                    </div>
+                    @endif
                 @empty <p class="text-violet-500 text-justify"> Aucun commentaire, vous serez le premier !!</p>
                 @endforelse
             </div>
