@@ -75,7 +75,7 @@ class RessourceController extends Controller
         $ct->titre = $req->titre;
         $ct->corps = $req->corps;
         $ct->media= $filename;                      // nom de fichier unique pour l image 
-        $ct->user_id = 1;                           // ce sera id du user connecté 
+        $ct->user_id = Auth::id();                           // ce sera id du user connecté 
         $ct->catalogue_id = $req->catalogue_id ;    // id du lib du catalogue  
         $ct->titre = $req->titre;
         $ct->nbvus = 0;
